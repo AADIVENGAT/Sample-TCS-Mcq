@@ -1,0 +1,146 @@
+
+//MCQ :
+
+1.
+ceil(3.6) - 4.000000
+floor(3.6) - 3.0000000
+pow(2,5) - 25.0000000
+abs(-12) - 12.000000
+--------------------------------------------------------------------------------
+
+2. 
+public class Main
+{
+public static void main(String args[])
+{
+int i=1,j=1;
+for(;j<=i;System.out.println(i+"-"+j++));
+}
+}
+ ANS: 1-1
+-------------------------------------------------------------------------------
+3. 
+class Test1
+{
+private static int add(int a,int b)
+{
+System.out.println("Inside private method");
+return a+b;
+}
+protected static int add(int a,int b,int c)
+{
+System.out.println(""Inside protected method");
+return a+b+c;
+}
+}
+public class Main extends Test1
+{
+static int add(int a,int b,int c)
+{
+System.out.println("Inside static method");
+return a+b+c;
+}
+public static void main(String[] args)
+{
+Main t = new Main();
+System.out.println(t.add(10,20,30));
+}
+}
+
+  ANS : Compilation error 
+(Main.java:16: error: add(int,int,int) in Main cannot override add(int,int,int) in Test1)
+
+------------------------------------------------------------------------------
+4.
+Integer m=10,n=35,p=5,d=6
+Comment about the output of the given two statements.
+
+print m*n+p/d
+print p/d+m*n
+
+(a) Differ by 10
+(b) Differ by 20
+(c) Differ due to left to right precedence
+(d) Same
+
+    ANS : (d) Same
+
+-----------------------------------------------------------------------------
+5.
+Which of the following is an INCORRECT syntax for function declaration with default argument in C++?
+
+(a) int foo(int x,int y = 20, int z=30)
+(b) int foo(int x, int y=20, int z)
+(c) int foo(int x,int y,int z=30)
+(d) int foo(int x=10,int y=20,int z=30)
+
+   ANS : (b)int foo(int x, int y=20, int z)
+
+-----------------------------------------------------------------------------
+6.  When we execute the code what will be value of x and y?
+
+#include<stdio.h>
+#include<conio.h>
+#include<iostream>
+using namespace std;
+void swap(int &x,int &y)
+{
+int temp;
+temp=x;
+}
+int main()
+{
+int x=10,y=20;
+swap(x,y);
+cout<<x<<y;
+return 0;
+}
+
+
+  ANS : 10 20
+
+---------------------------------------------------------------------------
+7. What will be the return value of fseek() function if error occurs?
+
+(a) Any non-zero value
+(b) NULL
+(c) 1
+(d) 0
+
+  ANS : (a) Any non zereo value.
+
+---------------------------------------------------------------------------
+8. Neelam wants to share her code with a colleague who may modify it.Thus she wants to include date of program creation the author and other she wants to include date of program cration the author and other information with the program.What component will be used?
+
+(a) Header file
+(b) Pre-processor
+(c) Comment
+
+   ANS : (c) Comment
+
+---------------------------------------------------------------------------
+9. What is the output of the following code statements? The compiler save the first integer at the memory location 4165 and the rest at consecutive memory space in order of declaration. Integer is one byte long.
+   integer a
+   pointer c,d
+   a=30
+   c=&a
+   d=c
+   a=a+10
+   print *c
+
+(a) 30
+(b) 40
+(c) 4165
+(d) 4166
+
+  ANS : (b) 40
+
+----------------------------------------------------------------------------
+10.  Which is used to convert source code to target language?
+
+(a) Linker
+(b) Loader
+(c) Compiler
+(d) Executer
+
+    ANS : (c) Compiler
